@@ -50,7 +50,9 @@ public class DispOrdController {
     @ApiOperation(value = "新增调度指令库")
     @PostMapping()
     public APICODE saveDispOrd(@RequestBody DispOrd dispOrd) {
+        System.out.println(dispOrd.getRtcw());
         dispOrdService.saveOrUpdate(dispOrd);
+
         return APICODE.OK();
     }
 

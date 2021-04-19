@@ -23,10 +23,10 @@ public class DispOrd {
     private int Id;
 
     @Column(name = "priority")
-    private String proproty;
+    private int proproty;
 
     @Column(name = "rtcw")
-    private String rtcw;
+    private int rtcw;
 
     @Column(name = "order_name")
     private String orderName;
